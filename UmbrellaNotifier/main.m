@@ -2,7 +2,7 @@
 //  main.m
 //  UmbrellaNotifier
 //
-//  Created by kaigi on 2014/12/16.
+//  Created by braitom on 2014/12/16.
 //  Copyright (c) 2014年 braitom. All rights reserved.
 //
 

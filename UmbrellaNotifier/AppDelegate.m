@@ -2,12 +2,11 @@
 //  AppDelegate.m
 //  UmbrellaNotifier
 //
-//  Created by kaigi on 2014/12/16.
+//  Created by braitom on 2014/12/16.
 //  Copyright (c) 2014年 braitom. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import "DetailViewController.h"
 #import "MasterViewController.h"
 
 @interface AppDelegate ()
@@ -22,6 +21,8 @@
     UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
     MasterViewController *controller = (MasterViewController *)navigationController.topViewController;
     controller.managedObjectContext = self.managedObjectContext;
+    
+    [application registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert | UIUserNotificationTypeBadge | UIUserNotificationTypeSound categories:nil]];
     return YES;
 }
 
